@@ -268,19 +268,16 @@ a {
 }
 
 .back-to-top {
+	
+	z-index: 500;
 	position: absolute;
-	bottom: 10px;
+	bottom: 20px;
 	left: 0;
 	right: 0;
 	margin: auto;
-	p {color: @mid-gray-two;}
+	p {color: #fff;}
 	.arrow-down{
-		p{color: @txt-gray;}
-		font-size: 300%;
-		.bounce;
-		.animated;
-		-webkit-animation-iteration-count: infinite;
-		  animation-iteration-count: infinite;
+		p{color: #fff;}
 	}
 }
 
@@ -294,6 +291,7 @@ a {
 ///iPhone Specific
 @media only screen and (max-width:640px) {
 	.nav {
+		position: fixed;
 		text-align: center;
 		height: 70px;
 		.nav-content {

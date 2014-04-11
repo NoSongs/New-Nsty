@@ -765,34 +765,25 @@ a:hover {
   color: #424243;
 }
 .back-to-top {
+  z-index: 500;
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   left: 0;
   right: 0;
   margin: auto;
 }
 .back-to-top p {
-  color: #cccaca;
-}
-.back-to-top .arrow-down {
-  font-size: 300%;
-  -webkit-animation-name: bounce;
-  animation-name: bounce;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+  color: #fff;
 }
 .back-to-top .arrow-down p {
-  color: #424243;
+  color: #fff;
 }
 @media only screen and (max-width: 768px) {
   
 }
 @media only screen and (max-width: 640px) {
   .nav {
+    position: fixed;
     text-align: center;
     height: 70px;
   }
