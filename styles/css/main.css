@@ -782,4 +782,16 @@ a:hover {
   .nav ul {
     display: none;
   }
+  .intro .content {
+    font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", Georgia, Times, "Times New Roman", serif;
+    top: 25%;
+  }
+  .intro h1 {
+    font-size: 225%;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+  }
+  .intro h2 {
+    font-size: 150%;
+  }
 }
