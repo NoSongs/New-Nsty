@@ -177,9 +177,9 @@ a {
 	width: 100%;
 	display: block;
 	height: 80px;
-	overflow: hidden;
 	border-bottom: 1px solid @lte-gray;
 	.nav-content {
+		position: relative;
 		padding: 0 40px;
 		margin: 28px auto 0 auto;
 	}
@@ -203,6 +203,14 @@ a {
 		color: @txt-gray;
 		&:hover {
 			color: @primary-color;
+		}
+	}
+	
+	.menu-wrap {
+		span {
+			font-size: 200%;
+			color: @mid-gray-two;
+			display: none;
 		}
 	}
 	
@@ -302,7 +310,41 @@ a {
 			width: 100%;
 		}
 		ul {
-			display: none;
+			position: absolute;
+			width: 100%;
+			top: 40px;
+			left: 0;
+			background: #fff;
+			border-bottom: 1px solid @lte-gray;
+		}
+		li {
+			text-align: left;
+			width: 100%;
+			clear: both;
+			height: 48px;
+		}
+		
+		li:first-child {
+			border-bottom: 1px solid @lte-gray;
+		}
+		.menu-wrap {
+			span {
+				display: block;
+				cursor: pointer;
+				position: absolute;
+				left: 20px;
+				top: -5px;
+			}
+			
+			a {
+				//background: pink;
+				display: block;
+				width: 100%;
+				padding: 0 20px;
+				margin-top: 15px;
+				text-indent: 80px;
+			}
+		
 		}
 	}
 	

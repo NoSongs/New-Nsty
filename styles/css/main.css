@@ -680,10 +680,10 @@ a:hover {
   width: 100%;
   display: block;
   height: 80px;
-  overflow: hidden;
   border-bottom: 1px solid #f4f5f5;
 }
 .nav .nav-content {
+  position: relative;
   padding: 0 40px;
   margin: 28px auto 0 auto;
 }
@@ -707,6 +707,11 @@ a:hover {
 }
 .nav a:hover {
   color: #f97b5e;
+}
+.nav .menu-wrap span {
+  font-size: 200%;
+  color: #cccaca;
+  display: none;
 }
 .messageme .content,
 .sharethrough .content,
@@ -795,7 +800,35 @@ a:hover {
     width: 100%;
   }
   .nav ul {
-    display: none;
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    left: 0;
+    background: #fff;
+    border-bottom: 1px solid #f4f5f5;
+  }
+  .nav li {
+    text-align: left;
+    width: 100%;
+    clear: both;
+    height: 48px;
+  }
+  .nav li:first-child {
+    border-bottom: 1px solid #f4f5f5;
+  }
+  .nav .menu-wrap span {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: -5px;
+  }
+  .nav .menu-wrap a {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 15px;
+    text-indent: 80px;
   }
   .content {
     color: #fff;

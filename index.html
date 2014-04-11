@@ -14,7 +14,20 @@
  <script type="text/javascript" src="//use.typekit.net/mxw8zqu.js"></script>
  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
  <script type="text/javascript" src="js/iscroll-probe.js"></script>
- <script type="text/javascript" src="js/wayne.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($){
+
+		/* prepend menu icon */
+		$('#menu-wrap').prepend('<span id="menu-icon" class="icon-arrow-down"></span>');
+
+		/* toggle nav */
+		$("#menu-icon").on("click", function(){
+		$("#menu").slideToggle();
+		$(this).toggleClass("active");
+		});
+
+	});
+</script>
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -24,10 +37,12 @@
 	<div class="nav">
 		<div class="nav-content">
 			<h1>David Stokes</h1>
-			<ul>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
+			<div class="menu-wrap" id="menu-wrap">
+				<ul class="menu" id="menu">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<div class="card intro">
