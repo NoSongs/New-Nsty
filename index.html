@@ -18,12 +18,12 @@
 	jQuery(document).ready(function($){
 
 		/* prepend menu icon */
-		$('#menu-wrap').prepend('<span id="menu-icon" class="icon-arrow-down"></span>');
+		$('#menu-wrap').prepend('<span id="menu-icon" class="icon-list"></span>');
 
 		/* toggle nav */
 		$("#menu-icon").on("click", function(){
-		$("#menu").slideToggle();
-		$(this).toggleClass("active");
+			$("#menu").slideToggle('200');
+			$(this).toggleClass("active");
 		});
 
 	});

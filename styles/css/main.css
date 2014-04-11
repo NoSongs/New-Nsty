@@ -484,6 +484,9 @@ table {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-dramatic-arrow:before {
+  content: "\e60c";
+}
 .icon-arrow-thin:before {
   content: "\e609";
 }
@@ -513,6 +516,9 @@ table {
 }
 .icon-left-arrow:before {
   content: "\e601";
+}
+.icon-list:before {
+  content: "\e60d";
 }
 .icon-arrow-down:before {
   content: "\e60a";
@@ -685,17 +691,19 @@ a:hover {
 .nav .nav-content {
   position: relative;
   padding: 0 40px;
-  margin: 28px auto 0 auto;
+  margin: 29px auto 0 auto;
 }
 .nav h1 {
   float: left;
   font-size: 112.5%;
+  margin-top: 4px;
 }
 .nav ul {
   padding: 0;
   margin: 0;
   list-style: none;
   float: right;
+  display: block;
 }
 .nav li {
   height: 80px;
@@ -703,7 +711,7 @@ a:hover {
   float: left;
 }
 .nav a {
-  color: #424243;
+  color: #cccaca;
 }
 .nav a:hover {
   color: #f97b5e;
@@ -798,23 +806,26 @@ a:hover {
   }
   .nav h1 {
     width: 100%;
+    margin-top: 0;
   }
   .nav ul {
+    display: none;
     position: absolute;
     width: 100%;
     top: 40px;
     left: 0;
     background: #fff;
-    border-bottom: 1px solid #f4f5f5;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.08);
   }
   .nav li {
-    text-align: left;
+    text-align: center;
     width: 100%;
     clear: both;
-    height: 48px;
+    height: 80px;
   }
   .nav li:first-child {
     border-bottom: 1px solid #f4f5f5;
+    border-top: 1px solid #f4f5f5;
   }
   .nav .menu-wrap span {
     display: block;
@@ -824,11 +835,10 @@ a:hover {
     top: -5px;
   }
   .nav .menu-wrap a {
+    font-size: 112.5%;
     display: block;
     width: 100%;
-    padding: 0 20px;
-    margin-top: 15px;
-    text-indent: 80px;
+    margin-top: 30px;
   }
   .content {
     color: #fff;
