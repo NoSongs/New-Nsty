@@ -704,6 +704,9 @@ a:hover {
   font-size: 112.5%;
   margin-top: 4px;
 }
+.nav h1 a {
+  color: #424243;
+}
 .nav ul {
   padding: 0;
   margin: 0;
@@ -741,7 +744,7 @@ a:hover {
   background-color: #248ffa;
 }
 .pandora .card-bg {
-  background-color: #121228;
+  background-color: #224099;
 }
 .sharethrough .card-bg {
   background-color: #37b99a;
@@ -798,6 +801,7 @@ a:hover {
   color: #fff;
 }
 .wrapper {
+  font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", Georgia, Times, "Times New Roman", serif;
   max-width: 748px;
   margin: 0 auto 0 auto;
   padding: 80px 0 0 0;
@@ -808,22 +812,53 @@ a:hover {
   padding: 0;
   border: none;
 }
+.header {
+  margin: 40px 0;
+}
+.header span {
+  font-size: 225%;
+  color: #cccaca;
+}
+.header span.icon-pandora-logo {
+  color: #224099;
+}
+.header h1 {
+  font-size: 225%;
+  color: #1b1c1c;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.header h2 {
+  margin-top: 15px;
+  font-size: 112.5%;
+  color: #a3a3a3;
+}
+.header h3 {
+  margin-top: 5px;
+  font-size: 100%;
+  color: #cccaca;
+  font-style: italic;
+}
 .about h1 {
   font-size: 150%;
-  color: #1b1c1c;
-}
-.header {
-  margin: 80px 0;
 }
 .body-text {
-  margin: 40px 0 0 0;
+  color: #5b5b5d;
+  margin: 0;
   text-align: left;
 }
 .body-text p {
   font-size: 112.5%;
-  line-height: 1.8em;
+  line-height: 1.68em;
   padding: 0 40px;
   margin: 0 0 20px 0;
+}
+.body-text p.caption {
+  font-size: 62.5%;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  color: #cccaca;
+  padding: 0 10px;
+  margin: -10px 0 20px 0;
 }
 @media only screen and (max-width: 768px) {
   
@@ -904,5 +939,59 @@ a:hover {
   }
   .intro h2 {
     font-size: 150%;
+  }
+  .wrapper {
+    padding: 70px 0 0 0;
+  }
+  .wrapper img {
+    margin: 10px 0;
+  }
+  .header {
+    margin: 20px 0;
+  }
+  .header span {
+    font-size: 225%;
+    color: #cccaca;
+  }
+  .header span.icon-pandora-logo {
+    color: #224099;
+  }
+  .header h1 {
+    font-size: 225%;
+    color: #1b1c1c;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .header h2 {
+    margin-top: 15px;
+    font-size: 112.5%;
+    color: #a3a3a3;
+  }
+  .header h3 {
+    margin-top: 5px;
+    font-size: 100%;
+    color: #cccaca;
+    font-style: italic;
+  }
+  .about h1 {
+    font-size: 150%;
+  }
+  .body-text {
+    color: #5b5b5d;
+    margin: 0;
+    text-align: left;
+  }
+  .body-text p {
+    font-size: 112.5%;
+    line-height: 1.68em;
+    padding: 0 40px;
+    margin: 0 0 20px 0;
+  }
+  .body-text p.caption {
+    font-size: 62.5%;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    color: #cccaca;
+    padding: 0 10px;
+    margin: -10px 0 20px 0;
   }
 }

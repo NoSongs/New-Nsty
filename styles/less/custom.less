@@ -187,6 +187,9 @@ a {
 		float: left;
 		font-size: 112.5%;
 		margin-top: 4px;
+		a {
+			color: @txt-gray;
+		}
 	}
 	ul {
 		padding: 0;
@@ -234,7 +237,7 @@ a {
 
 .pandora {
 	.card-bg {
-		background-color: #121228;
+		background-color: #224099;
 	}
 }
 
@@ -292,6 +295,7 @@ a {
 }
 
 .wrapper {
+	font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2", Georgia, Times, "Times New Roman", serif;
 	max-width: 748px;
 	margin: 0 auto 0 auto;
 	padding: 80px 0 0 0;
@@ -303,25 +307,59 @@ a {
 	}
 }
 
-.about {
+.header {
+	margin: 40px 0;
+	span {
+		font-size:225%;
+		color: @mid-gray-two;
+		&.icon-pandora-logo {
+			color: #224099;
+		}
+	}
+	
 	h1 {
-		font-size: 150%;
+		font-size: 225%;
 		color: @drk-gray;
+		font-weight: bold;
+		margin-top: 20px;
+	}
+	
+	h2 {
+		margin-top: 15px;
+		font-size: 112.5%;
+		color: @mid-gray-one;
+	}
+	
+	h3 {
+		margin-top: 5px;
+		font-size: 100%;
+		color: @mid-gray-two;
+		font-style: italic;
 	}
 }
 
-.header {
-	margin: 80px 0;
+.about {
+	h1 {
+		font-size: 150%;
+	}
 }
 
 .body-text {
-	margin: 40px 0 0 0;
+	color: lighten(@txt-gray, 10%);
+	margin: 0;
 	text-align: left;
 	p {
 		font-size: 112.5%;
-		line-height: 1.8em;
+		line-height: 1.68em;
 		padding: 0 40px;
 		margin: 0 0 20px 0;
+		&.caption {
+			font-size: 62.5%;
+			font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+			color: @mid-gray-two;
+			padding: 0 10px;
+			margin: -10px 0 20px 0;
+		}
 	}
 }
 
@@ -334,6 +372,8 @@ a {
 
 ///iPhone Specific
 @media only screen and (max-width:640px) {
+	
+	///Navigation
 	.nav {
 		position: fixed;
 		text-align: center;
@@ -389,7 +429,7 @@ a {
 		
 		}
 	}
-	
+	///Homepage Cards
 	.content{
 		color: #fff;
 		h1 {
@@ -420,6 +460,71 @@ a {
 		}
 		h2 {
 			font-size: 150%;
+		}
+	}
+	
+	///Longform Pages
+	
+	.wrapper {
+		padding: 70px 0 0 0;
+		img{
+			margin: 10px 0;
+		}
+	}
+
+	.header {
+		margin: 20px 0;
+		span {
+			font-size:225%;
+			color: @mid-gray-two;
+			&.icon-pandora-logo {
+				color: #224099;
+			}
+		}
+
+		h1 {
+			font-size: 225%;
+			color: @drk-gray;
+			font-weight: bold;
+			margin-top: 20px;
+		}
+
+		h2 {
+			margin-top: 15px;
+			font-size: 112.5%;
+			color: @mid-gray-one;
+		}
+
+		h3 {
+			margin-top: 5px;
+			font-size: 100%;
+			color: @mid-gray-two;
+			font-style: italic;
+		}
+	}
+
+	.about {
+		h1 {
+			font-size: 150%;
+		}
+	}
+
+	.body-text {
+		color: lighten(@txt-gray, 10%);
+		margin: 0;
+		text-align: left;
+		p {
+			font-size: 112.5%;
+			line-height: 1.68em;
+			padding: 0 40px;
+			margin: 0 0 20px 0;
+			&.caption {
+				font-size: 62.5%;
+				font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+				color: @mid-gray-two;
+				padding: 0 10px;
+				margin: -10px 0 20px 0;
+			}
 		}
 	}
 	
