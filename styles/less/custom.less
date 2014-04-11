@@ -267,6 +267,23 @@ a {
 	}
 }
 
+.back-to-top {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	p {color: @mid-gray-two;}
+	.arrow-down{
+		p{color: @txt-gray;}
+		font-size: 300%;
+		.bounce;
+		.animated;
+		-webkit-animation-iteration-count: infinite;
+		  animation-iteration-count: infinite;
+	}
+}
+
 
 ///Mobile
 @media only screen and (max-width : 768px) {
@@ -291,6 +308,24 @@ a {
 		}
 	}
 	
+	.content{
+		color: #fff;
+		h1 {
+			font-size: 225%;
+			margin-bottom: 20px;
+		}
+		h2 {
+			font-size: 112.5%;
+			margin-bottom: 20px;
+		}
+		a span {
+			font-size: 250%;
+			color: #fff;
+		}
+		top: 3%;
+
+	}
+	
 	.intro {
 		.content{
 			.fancy-txt;
@@ -305,6 +340,8 @@ a {
 			font-size: 150%;
 		}
 	}
+	
+	
 	
 }
 

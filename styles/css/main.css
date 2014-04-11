@@ -764,6 +764,30 @@ a:hover {
 .project-pointer .arrow-down p {
   color: #424243;
 }
+.back-to-top {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.back-to-top p {
+  color: #cccaca;
+}
+.back-to-top .arrow-down {
+  font-size: 300%;
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.back-to-top .arrow-down p {
+  color: #424243;
+}
 @media only screen and (max-width: 768px) {
   
 }
@@ -781,6 +805,22 @@ a:hover {
   }
   .nav ul {
     display: none;
+  }
+  .content {
+    color: #fff;
+    top: 3%;
+  }
+  .content h1 {
+    font-size: 225%;
+    margin-bottom: 20px;
+  }
+  .content h2 {
+    font-size: 112.5%;
+    margin-bottom: 20px;
+  }
+  .content a span {
+    font-size: 250%;
+    color: #fff;
   }
   .intro .content {
     font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", Georgia, Times, "Times New Roman", serif;
