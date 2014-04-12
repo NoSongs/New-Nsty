@@ -6,7 +6,7 @@
 @mid-gray-two: #cccaca;
 @lte-gray: #f4f5f5;
 @link: @primary-color;
-@link-color-hover: darken(@primary-color, 10%);
+@link-color-hover: darken(@primary-color, 20%);
 .clear{clear:both;}
 .easy-e {
 	-webkit-transition: all .15s ease-in-out;
@@ -29,6 +29,12 @@
 	 -moz-transform: translate3d(0, 0, 0);
 	 -ms-transform: translate3d(0, 0, 0);
 	 transform: translate3d(0, 0, 0);
+}
+
+.round {
+  -webkit-border-radius: 40px; 
+  -moz-border-radius: 40px; 
+  border-radius: 40px; 
 }
 
 @-webkit-keyframes bounce {
@@ -112,6 +118,7 @@ a {
 }
 
 a {
+	.easy-e;
 	color:@link; 
 	text-decoration:none;
 	&:hover {
@@ -154,8 +161,13 @@ a {
 		margin-bottom: 20px;
 	}
 	a span {
+		.easy-e;
 		font-size: 250%;
 		color: #fff;
+		&:hover {
+			font-size: 280%;
+			.easy-e;
+		}
 	}
 	z-index: 50;
 	display: block;
@@ -226,7 +238,7 @@ a {
 		top: 40%;
 	}
 	.content h1 {
-		font-family: "ff-tisa-sans-web-pro-1","ff-tisa-sans-web-pro-2", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		//font-family: "ff-tisa-sans-web-pro-1","ff-tisa-sans-web-pro-2", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	}
 }
 .messageme {
@@ -315,6 +327,9 @@ a {
 		&.icon-pandora-logo {
 			color: #224099;
 		}
+		&.icon-str-logo {
+			color: #3fb697;
+		}
 	}
 	
 	h1 {
@@ -359,6 +374,19 @@ a {
 			color: @mid-gray-two;
 			padding: 0 10px;
 			margin: -10px 0 20px 0;
+		}
+	}
+}
+
+.footer-well {
+	font-family: "ff-tisa-sans-web-pro-1","ff-tisa-sans-web-pro-2", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding: 40px 0 80px 0;
+	a {
+		border: 1px solid @primary-color;
+		padding: 8px 12px 8px 20px;
+		.round;
+		span {
+			font-size: 120%;
 		}
 	}
 }
@@ -474,49 +502,21 @@ a {
 
 	.header {
 		margin: 20px 0;
-		span {
-			font-size:225%;
-			color: @mid-gray-two;
-			&.icon-pandora-logo {
-				color: #224099;
-			}
-		}
-
 		h1 {
-			font-size: 225%;
-			color: @drk-gray;
-			font-weight: bold;
-			margin-top: 20px;
+			font-size: 200%;
+			margin-top: 10px;
 		}
 
 		h2 {
-			margin-top: 15px;
-			font-size: 112.5%;
-			color: @mid-gray-one;
-		}
-
-		h3 {
-			margin-top: 5px;
-			font-size: 100%;
-			color: @mid-gray-two;
-			font-style: italic;
-		}
-	}
-
-	.about {
-		h1 {
-			font-size: 150%;
+			margin-top: 10px;
 		}
 	}
 
 	.body-text {
-		color: lighten(@txt-gray, 10%);
-		margin: 0;
-		text-align: left;
 		p {
 			font-size: 112.5%;
 			line-height: 1.68em;
-			padding: 0 40px;
+			padding: 0 20px;
 			margin: 0 0 20px 0;
 			&.caption {
 				font-size: 62.5%;

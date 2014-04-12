@@ -526,10 +526,43 @@ table {
 .icon-list:before {
   content: "\e60d";
 }
+.icon-arrow-left:before {
+  content: "\e610";
+}
 .icon-arrow-down:before {
-  content: "\e60a";
+  content: "\e611";
+}
+.icon-arrow-up:before {
+  content: "\e612";
 }
 .icon-arrow-right:before {
+  content: "\e613";
+}
+.icon-arrow-left2:before {
+  content: "\e614";
+}
+.icon-arrow-down2:before {
+  content: "\e60a";
+}
+.icon-arrow-up2:before {
+  content: "\e615";
+}
+.icon-arrow-right2:before {
+  content: "\e616";
+}
+.icon-arrow-left3:before {
+  content: "\e617";
+}
+.icon-arrow-down3:before {
+  content: "\e618";
+}
+.icon-arrow-up3:before {
+  content: "\e619";
+}
+.icon-uniE61A:before {
+  content: "\e61a";
+}
+.icon-arrow-right3:before {
   content: "\e60b";
 }
 .clear {
@@ -555,6 +588,11 @@ table {
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+}
+.round {
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
 }
 @-webkit-keyframes bounce {
   0%,
@@ -633,11 +671,15 @@ a {
   line-height: 1em;
 }
 a {
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
   color: #f97b5e;
   text-decoration: none;
 }
 a:hover {
-  color: #f7532d;
+  color: #e83309;
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
@@ -682,8 +724,19 @@ a:hover {
   margin-bottom: 20px;
 }
 .content a span {
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
   font-size: 250%;
   color: #fff;
+}
+.content a span:hover {
+  font-size: 280%;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 .nav {
   background: #fff;
@@ -734,11 +787,6 @@ a:hover {
 .sharethrough .content,
 .pandora .content {
   top: 40%;
-}
-.messageme .content h1,
-.sharethrough .content h1,
-.pandora .content h1 {
-  font-family: "ff-tisa-sans-web-pro-1", "ff-tisa-sans-web-pro-2", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .messageme .card-bg {
   background-color: #248ffa;
@@ -822,6 +870,9 @@ a:hover {
 .header span.icon-pandora-logo {
   color: #224099;
 }
+.header span.icon-str-logo {
+  color: #3fb697;
+}
 .header h1 {
   font-size: 225%;
   color: #1b1c1c;
@@ -859,6 +910,20 @@ a:hover {
   color: #cccaca;
   padding: 0 10px;
   margin: -10px 0 20px 0;
+}
+.footer-well {
+  font-family: "ff-tisa-sans-web-pro-1", "ff-tisa-sans-web-pro-2", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 40px 0 80px 0;
+}
+.footer-well a {
+  border: 1px solid #f97b5e;
+  padding: 8px 12px 8px 20px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+}
+.footer-well a span {
+  font-size: 120%;
 }
 @media only screen and (max-width: 768px) {
   
@@ -949,42 +1014,17 @@ a:hover {
   .header {
     margin: 20px 0;
   }
-  .header span {
-    font-size: 225%;
-    color: #cccaca;
-  }
-  .header span.icon-pandora-logo {
-    color: #224099;
-  }
   .header h1 {
-    font-size: 225%;
-    color: #1b1c1c;
-    font-weight: bold;
-    margin-top: 20px;
+    font-size: 200%;
+    margin-top: 10px;
   }
   .header h2 {
-    margin-top: 15px;
-    font-size: 112.5%;
-    color: #a3a3a3;
-  }
-  .header h3 {
-    margin-top: 5px;
-    font-size: 100%;
-    color: #cccaca;
-    font-style: italic;
-  }
-  .about h1 {
-    font-size: 150%;
-  }
-  .body-text {
-    color: #5b5b5d;
-    margin: 0;
-    text-align: left;
+    margin-top: 10px;
   }
   .body-text p {
     font-size: 112.5%;
     line-height: 1.68em;
-    padding: 0 40px;
+    padding: 0 20px;
     margin: 0 0 20px 0;
   }
   .body-text p.caption {
