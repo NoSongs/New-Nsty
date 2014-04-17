@@ -149,6 +149,24 @@ a {
 	background-position:50% 50%;
 }
 
+.messageme {
+	.card-bg {
+		background: #248ffa url(../../images/msgme-cover-big.jpg) top left no-repeat;
+	}
+}
+
+.pandora {
+	.card-bg {
+		background: #224099 url(../../images/pandora-cover-big.jpg) top left no-repeat;
+	}
+}
+
+.sharethrough {
+	.card-bg {
+		background: #37b99a url(../../images/str-cover-big.jpg) center center no-repeat;
+	}
+}
+
 .content{
 	color: #fff;
 	h1 {
@@ -237,9 +255,6 @@ a {
 	.content {
 		top: 40%;
 	}
-	.content h1 {
-		//font-family: "ff-tisa-sans-web-pro-1","ff-tisa-sans-web-pro-2", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	}
 }
 .messageme {
 	.card-bg {
@@ -304,6 +319,7 @@ a {
 	.arrow-down{
 		p{color: #fff;}
 	}
+	display: none;
 }
 
 .wrapper {
@@ -324,6 +340,12 @@ a {
 	span {
 		font-size:225%;
 		color: @mid-gray-two;
+		&.icon-msgme-logo {
+			color: #178dfe;
+			background: -webkit-linear-gradient(#178dfe, #1e1c75);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
 		&.icon-pandora-logo {
 			color: #224099;
 		}
@@ -353,12 +375,6 @@ a {
 	}
 }
 
-.about {
-	h1 {
-		font-size: 150%;
-	}
-}
-
 .body-text {
 	color: lighten(@txt-gray, 10%);
 	margin: 0;
@@ -371,7 +387,7 @@ a {
 		&.caption {
 			font-size: 62.5%;
 			font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-			color: @mid-gray-two;
+			color: @mid-gray-one;
 			padding: 0 10px;
 			margin: -10px 0 20px 0;
 		}
@@ -412,7 +428,7 @@ a {
 		}
 		h1 { 
 			width: 100%;
-			margin-top: 3px;
+			margin-top: 0;
 		}
 		ul {
 			display: none;
@@ -453,6 +469,7 @@ a {
 				display: block;
 				width: 100%;
 				margin-top: 30px;
+				color: @txt-gray;
 			}
 		
 		}
@@ -491,6 +508,24 @@ a {
 		}
 	}
 	
+	.messageme {
+		.card-bg {
+			background: #178dfe url(../../images/msgme-cover-mobile.jpg) center center no-repeat;
+		}
+	}
+
+	.pandora {
+		.card-bg {
+			background: #224099 url(../../images/pandora-cover-mobile.jpg) center center no-repeat;;
+		}
+	}
+	
+	.sharethrough {
+		.card-bg {
+			background: #37b99a url(../../images/str-cover-mobile.jpg) center center no-repeat;
+		}
+	}
+	
 	///Longform Pages
 	
 	.wrapper {
@@ -520,8 +555,6 @@ a {
 			margin: 0 0 20px 0;
 			&.caption {
 				font-size: 62.5%;
-				font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-				color: @mid-gray-two;
 				padding: 0 10px;
 				margin: -10px 0 20px 0;
 			}
@@ -532,5 +565,25 @@ a {
 	
 }
 
+@media only screen and (max-width:320px) {
+	
+	.messageme {
+		.card-bg {
+			background: #178dfe url(../../images/msgme-cover-iphone.jpg) center center no-repeat;
+		}
+	}
 
+	.pandora {
+		.card-bg {
+			background: #224099 url(../../images/pandora-cover-iphone.jpg) center center no-repeat;;
+		}
+	}
+	
+	.sharethrough {
+		.card-bg {
+			background: #37b99a url(../../images/str-cover-iphone.jpg) center center no-repeat;
+		}
+	}
+
+}
 
