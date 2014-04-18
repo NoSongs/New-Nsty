@@ -20,12 +20,12 @@
 	jQuery(document).ready(function($){
 
 		/* prepend menu icon */
-		$('#menu-wrap').prepend('<span id="menu-icon" class="icon-list"></span>');
+		$('#menu-wrap').prepend('<div id="menu-icon-container" class="menu-icon-container"><div class="menu-icon"><div class="bar top"></div><div class="bar middle"></div><div class="bar bottom"></div></div></div>');
 
 		/* toggle nav */
-		$("#menu-icon").on("click", function(){
+		$("#menu-icon-container").on("click", function(){
 			$("#menu").slideToggle('100');
-			$(this).toggleClass("icon-list icon-cross active");
+			$(this).toggleClass("close");
 		});
 
 	});
