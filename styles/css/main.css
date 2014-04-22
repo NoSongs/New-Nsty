@@ -1017,16 +1017,17 @@ a:hover {
     display: block;
     cursor: pointer;
     position: absolute;
-    height: 17px;
-    width: 22px;
-    left: 20px;
-    top: 0;
+    height: 70px;
+    width: 44px;
+    left: 0px;
+    top: -25px;
     /* Prevent elements to be highlighted on tap */
   
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
   .nav .menu-wrap .menu-icon-container .menu-icon {
     position: relative;
+    margin: 25px 0 0 20px;
     display: block;
     height: 17px;
     width: 22px;
@@ -1220,46 +1221,6 @@ a:hover {
   }
 }
 @media only screen and (min-width: 1500px) {
-  /*--
-  	.nav {
-  		height: 158px;
-  		.nav-content {
-  			position: relative;
-  			padding: 0 40px;
-  			margin: 57px auto 0 auto;
-  		}
-  		h1 { 
-  			font-size: 217.875%;
-  		}
-  		ul {
-  			padding: 0;
-  			margin: 0;
-  			list-style: none;
-  			float: right;
-  			display: block;
-  		}
-  		 li {
-  			font-size: 193.6875%;
-  			height: 80px;
-  			width: 200px;
-  			float: left;
-  		}
-  
-  		a {
-  			color: @mid-gray-two;
-  			&:hover {
-  				color: @primary-color;
-  			}
-  		}
-  
-  		.menu-wrap {
-  			.menu-icon {
-  				display: none;
-  			}
-  		}
-  
-  	}
-  	--*/
   .content {
     color: #fff;
     padding: 0 40px;
