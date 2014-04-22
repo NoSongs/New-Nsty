@@ -11,11 +11,9 @@
   <link rel="stylesheet" href="styles/css/main.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-
  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
  <script type="text/javascript" src="//use.typekit.net/mxw8zqu.js"></script>
  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
- <script type="text/javascript" src="js/iscroll-probe.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($){
 
@@ -30,6 +28,7 @@
 
 	});
 </script>
+
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -47,9 +46,10 @@
 			</div>
 		</div>
 	</div>
+	<div class="foo-wrap" id="skrollr-body">
 	<div class="card intro">
 		<div class="card-bg"></div>
-		<div class="content">
+		<div class="content" data-0="opacity: 1; -webkit-transform: translate(0px, 0px);" data-300="opacity: 0; -webkit-transform: translate(0px, 50px);">
 			<h1>UX Research, Prototyping &amp; Design</h1>
 			<h2>(also, good hangs.)</h2>
 		</div><!--/content-->
@@ -61,31 +61,62 @@
 		</div>
 	</div><!--intro -->
 	<div class="card messageme">
-		<div class="card-bg"></div>
-		<div class="content">
+		<div class="card-bg" 
+			data-bottom-top="opacity: 0; -webkit-transform: translate(0px, -150px);" 
+			data-center-top="opacity: 1; -webkit-transform: translate(0px, 0);">
+		</div>
+		<div class="content" 
+			data-bottom-top="opacity: 0; -webkit-transform: translate(0px, -150px);" 
+			data-center-top="opacity: 1; -webkit-transform: translate(0px, 0);"
+			data--200-top="opacity: 0;">
+			
 			<h1 class="fancy-txt">MessageMe</h1>
-			<h2>Responsive Web Client - 2013</h2>
+			<h2>Responsive Web Client</h2>
 			<h2><a class="foo" href="messageme.html"><span class="icon-dramatic-arrow"></span></a></h2>
 		</div><!--/content-->
 	</div>
 	<div class="card pandora">
-		<div class="card-bg"></div>
-		<div class="content">
+		<div class="card-bg" 
+			data-bottom-top="opacity: 0; -webkit-transform: translate(0px, -150px);" 
+			data-center-top="opacity: 1; -webkit-transform: translate(0px, 0);">
+		</div>
+		<div class="content" 
+			data-bottom-top="opacity: 0; -webkit-transform: translate(0px, -150px);" 
+			data-center-top="opacity: 1; -webkit-transform: translate(0px, 0);"
+			data--200-top="opacity: 0;">
+			
 			<h1 class="fancy-txt">Pandora</h1>
-			<h2>Pandora For Artists - 2013</h2>
+			<h2>Pandora For Artists</h2>
 			<h2><a href="pandora.html"><span class="icon-dramatic-arrow"></span></a></h2>
 		</div><!--/content-->
 	</div>
 	<div class="card sharethrough">
-		<div class="card-bg"></div>
-		<div class="content">
+		<div class="card-bg" 
+			data-bottom-top="opacity: 0; -webkit-transform: translate(0px, -150px);" 
+			data-center-top="opacity: 1; -webkit-transform: translate(0px, 0);">
+		</div>
+		<div class="content" 
+			data-bottom-top="opacity: 0; -webkit-transform: translate(0px, -150px);" 
+			data-center-top="opacity: 1; -webkit-transform: translate(0px, 0);"
+			data--200-top="opacity: 0;">
+			
 			<h1 class="fancy-txt">Sharethrough</h1>
-			<h2>UX Design - 2011 thru 2013</h2>
+			<h2>UX Design</h2>
 			<h2><a href="sharethrough.html"><span class="icon-dramatic-arrow"></span></a></h2>
 		</div><!--/content-->
 		<div class="back-to-top">
 			<p>Back To Top</p>
 		</div>
 	</div>
+	<div class="clear"></div>
+	</div>
+
+	<script type="text/javascript" src="js/skrollr.min.js"></script>
+
+	<script type="text/javascript">
+		skrollr.init({
+			forceHeight: false
+		});
+	</script>
 </body>
 </html>
